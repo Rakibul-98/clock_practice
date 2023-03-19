@@ -16,7 +16,7 @@ section{
 section::before{
     content: '';
     position: absolute;
-    top: 10%;
+    top: 15%;
     right: 20%;
     width: 300px;
     height: 300px;
@@ -43,7 +43,7 @@ section::before{
 section::after{
     content: '';
     position: absolute;
-    bottom: 10%;
+    bottom: 5%;
     left: 20%;
     width: 250px;
     height: 250px;
@@ -77,9 +77,10 @@ section::after{
 .title{
     position: absolute;
     color: white;
-    margin-top: 10px;
+    margin-top: 20px;
     top: 0px;
     font-size: 30px;
+    text-align: center;
 }
 @media (max-width:426px) {
     .title{
@@ -96,6 +97,8 @@ section::after{
     z-index: 1000;
     border: solid 1px rgba(155, 255, 255, 0.1);
     backdrop-filter: blur(5px);
+    margin-top: 100px;
+    margin: 100px 20px 0;
 }
 @media (max-width:426px) {
     .clock{
@@ -172,8 +175,8 @@ section::after{
         font-size: 10px;
     }
 }
-.name{
+.name a{
     font-family: cursive !important;
-    color: yellow;
+    color: yellow !important;
     font-weight: bolder;
 }
